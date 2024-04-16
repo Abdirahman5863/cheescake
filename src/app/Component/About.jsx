@@ -3,7 +3,7 @@ import React from "react";
 const About = () => {
   return (
     <main className="
-    flex  m-auto  p-10  justify-center  items-center space-x-10"
+    flex  m-auto  p-10  justify-center  items-center space-x-10 h-full"
     >
     <article className="flex-1">
       <Image src="/fruitk.png" alt="" width={300} height={300} className="md:w-[500px] md:h-[500px] w-auto h-auto" />

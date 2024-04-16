@@ -12,6 +12,9 @@ const page = () => {
       <section>
         <About/>
       </section>
+      <section>
+        
+      </section>
 
     </main>
   );

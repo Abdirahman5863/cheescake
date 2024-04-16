@@ -57,6 +57,9 @@ const Navbar = () => {
           <Link href="/menu">
             <button className="hover:bg-white p-2 rounded-md">Menu</button>
           </Link>
+          <Link href="/blog">
+            <button className="hover:bg-white p-2 rounded-md">Blog</button>
+          </Link>
           <Link href="/contact">
             <button className="hover:bg-white p-2 rounded-md">Contact</button>
           </Link>
