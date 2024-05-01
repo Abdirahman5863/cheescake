@@ -1,5 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
+
 import { SlSocialTwitter, SlSocialYoutube } from "react-icons/sl";
 import { TiSocialFacebookCircular, TiSocialInstagramCircular, TiSocialTumblerCircular } from 'react-icons/ti'
 const Contact = () => {
@@ -31,12 +32,78 @@ const Contact = () => {
 
         </article>
         <article className='flex-1 flex justify-center items-center '>
-          <form  className='flex justify-center items-center gap-7 flex-col'>
-            <input placeholder='name' type='text' className='md:w-[413px] h-[60px] rounded-[10px] p-4 border-blue-500 focus:border-red-500 shadow'/>
-            <input placeholder='email' type='email' className='md:w-[413px]  md:h-[60px] rounded-[10px] p-4 border-blue-500 focus:border-red-500 shadow'/>
-            <input placeholder='your message...' type='text' className='md:w-[413px] md:h-[161px] h-[100px] rounded-[10px] p-4 border-blue-500 focus:border-red-500 shadow'/>
-<button className='rounded-full bg-[#FCAE36] p-2 md:w-[417px]'>contact us now</button>
-          </form>
+        <div className="mt-8 mb-8 sm:mx-auto sm:w-full sm:max-w-md">
+      <div className="bg-white py-8 px-6 shadow rounded-lg sm:px-10">
+      <form
+
+        className="mb-0 space-y-6" method="post"
+        action="#"
+      >
+        <div className="flex gap-5 flex-col">
+          <div className="flex flex-col gap-5">
+          <label htmlFor="owner" className="block text-sm font-medium text-gray-700 " >Name</label>
+            <input
+              id="owner"
+              required
+              type="text"
+              name="owner"
+              placeholder="Address"
+            
+              className="w-full border border-gray-300 px-3 py-2 rounded-lg shadow-sm focus:outline-none focus:border-indigo-500 focus:ring focus:ring-indigo-500"
+            />
+          </div>
+
+          <div className="flex gap-3 flex-col" >
+            <label htmlFor="owner" className="block text-sm font-medium text-gray-700 " >EmaiL</label>
+            <input
+              id="title"
+              required
+              placeholder="Email"
+              type="Email"
+              name="Email"
+            
+       className="w-full border border-gray-300 px-3 py-2 rounded-lg shadow-sm focus:outline-none focus:border-indigo-500 focus:ring focus:ring-indigo-500"
+            />
+          </div>
+
+        
+
+          <div className="flex gap-3 flex-col">
+          <label htmlFor="owner" className="block text-sm font-medium text-gray-700 " >Message</label>
+        
+            <textarea
+              id="description"
+              placeholder="Description"
+              name="description"
+            
+              className="w-full border border-gray-300 px-3 py-2 rounded-lg shadow-sm focus:outline-none focus:border-indigo-500 focus:ring focus:ring-indigo-500"
+            ></textarea>
+          </div>
+
+          <div className="flex gap-3 flex-col">
+          <label htmlFor="owner" className="block text-sm font-medium text-gray-700 " >Submit Date</label>
+            <input
+              id="date"
+              placeholder="Date"
+              type="date"
+              name="date"
+            
+              className="w-full border border-gray-300 px-3 py-2 rounded-lg shadow-sm focus:outline-none focus:border-indigo-500 focus:ring focus:ring-indigo-500"
+            />
+          </div>
+<div className="flex justify-center items-center mb-2">
+<button
+            className="rounded-sm  bg-blue-500 px-6 py-2 block text-white"
+          >
+            Submit
+          </button>
+</div>
+        
+        </div>
+      </form>
+
+      </div>
+      </div>
   
         </article>
     </main>
